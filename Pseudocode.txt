@@ -1,0 +1,24 @@
+Pseudocode
+Simplest thing: You click on the enemy ship to attack. 
+    --If the ship is destroyed and it's not the last enemy, you can retreat or keep fighting.
+            --If you retreat, game over.
+            --If you keep fighting, a new enemy appears (return to line 2)
+        --Repeat process for each new ship until you have been destroyed or all six enemies have been destroyed.
+    --If the ship survives, it attacks you.
+        --If your ship is destroyed, game over.
+        --If your ship survives, you attack again.
+
+The simplest piece is an attack on the first ship.  You attack.  Damage is calculated. The enemy is destroyed or it isn't.  For now, forget about what happens if it's destroyed.  The ship survives, so it attacks you. Damage is calculated.  You are destroyed or you survive.  If you're destroyed, game over.  If you survive, you can retreat or keep fighting.  If you retreat, game over.  If you keep fighting, you attack again.
+
+1. Launch page
+2. Attack or retreat
+(presume attack)
+3. Calculate damage
+(presume enemy survives)
+4. Attack or retreat
+(presume attack)
+5. Calculate damage
+
+Anatomy of an attack:  Your ship fires.  It scores a hit or it doesn't.  If it scores a hit, the enemy ship's hull strength is reduced by the amount of your ship's firepower. 
+
+I'm done with one attack.  How to move on to the next 5?
